@@ -1,9 +1,6 @@
 import DeployButton from "../components/DeployButton";
 import AuthButton from "../components/AuthButton";
 import { createClient } from "@/utils/supabase/server";
-import ConnectSupabaseSteps from "@/components/ConnectSupabaseSteps";
-import SignUpUserSteps from "@/components/SignUpUserSteps";
-import Header from "@/components/Header";
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -28,24 +25,26 @@ export default async function Index() {
         </div>
       </nav>
 
-      <div className="animate-in flex-1 flex flex-col gap-20 opacity-0 max-w-4xl px-3">
-        <Header />
-        <main className="flex-1 flex flex-col gap-6">
-          <h2 className="font-bold text-4xl mb-4">Next steps</h2>
-          {isSupabaseConnected ? <SignUpUserSteps /> : <ConnectSupabaseSteps />}
-        </main>
+      <div className="flex flex-col justify-center items-center px-5">
+        <h1 className="text-slate-800 opacity-40 font-bold text-6xl mb-6">hello</h1> 
+        <h1 className="text-black text-center font-bold text-7xl">Welcome to bizInfo ads</h1>
+
+        <span className="flex flex-col justify-center items-center mt-6">
+          <p className="text-center">We help put your business in front of the right people at the right time.</p>
+          <p className="opacity-70">Lets introduce your business to the world !!!</p>
+        </span>
       </div>
 
-      <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
+      <footer className="w-full h-6 border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs mb-0">
         <p>
-          Powered by{" "}
+         
           <a
-            href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
+            href="https://ajayportfolio.vercel.app/"
             target="_blank"
             className="font-bold hover:underline"
             rel="noreferrer"
           >
-            Supabase
+            Developer
           </a>
         </p>
       </footer>
