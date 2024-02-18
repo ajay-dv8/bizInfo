@@ -203,16 +203,15 @@ const Questions = () => {
       </div>
         
       <div className=" flex-col flex gap-4 border rounded-lg px-6 py-4 shadow">
-        <p className='text-lg '>9. Business goals for the end of the year</p>
+        <p className='text-lg '>9. Business goals </p>
         <p className='flex flex-row items-end gap-4 text-lg'>
           ans. 
           <Input name='goals' type='text' value={goals} onChange={e => setGoals(e.target.value)} />
         </p>
-        <p className='text-sm text-gray-500'>These are the added services the business offers as a plus, if any. Example swimming, games, food etc.</p>
       </div>
         
       <div className=" flex-col flex gap-4 border rounded-lg px-6 py-4 shadow">
-        <p className='text-lg '>10. Goals for the business in the coming years</p>
+        <p className='text-lg '>10. Whats the business's mission</p>
         <p className='flex flex-row items-end gap-4 text-lg'>
           ans. 
           <Input name='mission' type='text' value={mission} onChange={e => setMission(e.target.value)} />
