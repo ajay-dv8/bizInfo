@@ -34,7 +34,7 @@ const ViewBusinessDetails = async () => {
             <TableHead>Online presence</TableHead>
             <TableHead>Target audience</TableHead>
             <TableHead>Goals</TableHead>
-            <TableHead>Future goals</TableHead>
+            <TableHead>Mission</TableHead>
             <TableHead>Other info</TableHead>
           </TableRow>
         </TableHeader>
@@ -53,7 +53,7 @@ const ViewBusinessDetails = async () => {
               <TableCell>{data.online_presence}</TableCell>
               <TableCell>{data.target_audience}</TableCell>
               <TableCell>{data.goals}</TableCell>
-              <TableCell>{data.future_goals}</TableCell>
+              <TableCell>{data.mission}</TableCell>
               <TableCell>{data.other_info}</TableCell>
             </TableRow>
           )): "Loading" }

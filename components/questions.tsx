@@ -18,7 +18,7 @@ const Questions = () => {
   const [services, setServices] = useState('');
   const [extra_services, setExtra_services] = useState('');
   const [goals, setGoals] = useState('');
-  const [future_goals, setFuture_goals] = useState('');
+  const [mission, setMission] = useState('');
   const [price_range, setPrice_range] = useState('');
   const [other_info, setOther_info] = useState('');
   const [from, setFrom] = useState('');
@@ -43,7 +43,7 @@ const Questions = () => {
     const services = formData.get('services') as string
     const extra_services = formData.get('extra_services') as string
     const goals = formData.get('goals') as string
-    const future_goals = formData.get('future_goals') as string
+    const mission = formData.get('mission') as string
     const from = formData.get('from') as string
     const to = formData.get('to') as string
     const phone = formData.get('phone') as string
@@ -69,7 +69,7 @@ const Questions = () => {
           services : services,
           extra_services : extra_services,
           goals : goals,
-          future_goals : future_goals,
+          mission : mission,
           price_range : "from : Ghc." + from + " to : " + to,
           other_info : other_info,
           phone : phone,
@@ -92,7 +92,7 @@ const Questions = () => {
     setBiz_name('');
     setBiz_type('');
     setExtra_services('');
-    setFuture_goals('');
+    setMission('');
     setGoals('');
     setBiz_location('');
     setOnline_presence_state('');
@@ -215,7 +215,7 @@ const Questions = () => {
         <p className='text-lg '>10. Goals for the business in the coming years</p>
         <p className='flex flex-row items-end gap-4 text-lg'>
           ans. 
-          <Input name='future_goals' type='text' value={future_goals} onChange={e => setFuture_goals(e.target.value)} />
+          <Input name='mission' type='text' value={mission} onChange={e => setMission(e.target.value)} />
         </p>
       </div>
 
